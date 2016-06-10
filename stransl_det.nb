@@ -1,0 +1,294 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      9253,        285]
+NotebookOptionsPosition[      8268,        245]
+NotebookOutlinePosition[      8603,        260]
+CellTagsIndexPosition[      8560,        257]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"A", " ", "=", 
+  RowBox[{"{", " ", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "   ", 
+     RowBox[{
+     "1", ",", "   ", "0", ",", "    ", "0", ",", "      ", "0", ",", 
+      "          ", "0", ",", "      ", "0", ",", "     ", "0", ",", "     ", 
+      "0"}], "         ", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", "   ", 
+     RowBox[{
+     "0", ",", "   ", "1", ",", "    ", "0", ",", "      ", "0", ",", 
+      "          ", "0", ",", "      ", "0", ",", "     ", "0", ",", "     ", 
+      "0"}], "         ", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", "   ", 
+     RowBox[{
+     "0", ",", "   ", "0", ",", "   ", "A11", ",", "   ", "A12", ",", "  ", 
+      "B11", ",", "B12", ",", "C11", ",", "C12"}], "     ", "}"}], ",", 
+    "            ", 
+    RowBox[{"{", "   ", 
+     RowBox[{
+     "0", ",", "   ", "0", ",", "   ", "A12", ",", "   ", "A22", ",", "  ", 
+      "B12", ",", "B22", ",", "C12", ",", "C22"}], "     ", "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", "   ", 
+     RowBox[{
+     "0", ",", "   ", "0", ",", "     ", "0", ",", "      ", "D12", ",", 
+      "    ", "1", ",", "      ", "0", ",", "     ", "0", ",", "      ", 
+      "0"}], "        ", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", "   ", 
+     RowBox[{"0", ",", "   ", "0", ",", 
+      RowBox[{"-", "D12"}], ",", "      ", "0", ",", "      ", "0", ",", 
+      "      ", "1", ",", "     ", "0", ",", "     ", "0"}], "        ", 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", "   ", 
+     RowBox[{
+     "0", ",", "   ", "0", ",", "     ", "0", ",", "      ", "E12", ",", 
+      "    ", "0", ",", "      ", "0", ",", "     ", "1", ",", "     ", "0"}],
+      "        ", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", "   ", 
+     RowBox[{"0", ",", "   ", "0", ",", 
+      RowBox[{"-", "E12"}], ",", "      ", "0", ",", "      ", "0", ",", 
+      "      ", "0", ",", "     ", "0", ",", "     ", "1"}], "        ", 
+     "}"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.418740199385022*^9, 3.418740200202407*^9}, {
+  3.418740235196434*^9, 3.418740575830315*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+     "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0", ",", "1", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+     "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0", ",", "0", ",", "A11", ",", "A12", ",", "B11", ",", "B12", ",", "C11",
+      ",", "C12"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0", ",", "0", ",", "A12", ",", "A22", ",", "B12", ",", "B22", ",", "C12",
+      ",", "C22"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0", ",", "0", ",", "0", ",", "D12", ",", "1", ",", "0", ",", "0", ",", 
+     "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{"-", "D12"}], ",", "0", ",", "0", ",", "1", ",", "0", ",", "0"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0", ",", "0", ",", "0", ",", "E12", ",", "0", ",", "0", ",", "1", ",", 
+     "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{"-", "E12"}], ",", "0", ",", "0", ",", "0", ",", "0", ",", "1"}],
+     "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.418740596061*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"A", "//", "MatrixForm"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.418736204871375*^9, 3.418736207665147*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "1", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "A11", "A12", "B11", "B12", "C11", "C12"},
+     {"0", "0", "A12", "A22", "B12", "B22", "C12", "C22"},
+     {"0", "0", "0", "D12", "1", "0", "0", "0"},
+     {"0", "0", 
+      RowBox[{"-", "D12"}], "0", "0", "1", "0", "0"},
+     {"0", "0", "0", "E12", "0", "0", "1", "0"},
+     {"0", "0", 
+      RowBox[{"-", "E12"}], "0", "0", "0", "0", "1"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.41873620895897*^9, 3.4187365555138*^9, 
+  3.418740596655686*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"d", "=", 
+  RowBox[{"Det", "[", "A", "]"}]}]], "Input",
+ CellChangeTimes->{{3.418736304740701*^9, 3.418736316519894*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   SuperscriptBox["A12", "2"]}], "+", 
+  RowBox[{"A11", " ", "A22"}], "+", 
+  RowBox[{"A12", " ", "B11", " ", "D12"}], "-", 
+  RowBox[{"A11", " ", "B12", " ", "D12"}], "+", 
+  RowBox[{"A22", " ", "B12", " ", "D12"}], "-", 
+  RowBox[{"A12", " ", "B22", " ", "D12"}], "-", 
+  RowBox[{
+   SuperscriptBox["B12", "2"], " ", 
+   SuperscriptBox["D12", "2"]}], "+", 
+  RowBox[{"B11", " ", "B22", " ", 
+   SuperscriptBox["D12", "2"]}], "+", 
+  RowBox[{"A12", " ", "C11", " ", "E12"}], "-", 
+  RowBox[{"A11", " ", "C12", " ", "E12"}], "+", 
+  RowBox[{"A22", " ", "C12", " ", "E12"}], "-", 
+  RowBox[{"A12", " ", "C22", " ", "E12"}], "+", 
+  RowBox[{"B22", " ", "C11", " ", "D12", " ", "E12"}], "-", 
+  RowBox[{"2", " ", "B12", " ", "C12", " ", "D12", " ", "E12"}], "+", 
+  RowBox[{"B11", " ", "C22", " ", "D12", " ", "E12"}], "-", 
+  RowBox[{
+   SuperscriptBox["C12", "2"], " ", 
+   SuperscriptBox["E12", "2"]}], "+", 
+  RowBox[{"C11", " ", "C22", " ", 
+   SuperscriptBox["E12", "2"]}]}]], "Output",
+ CellChangeTimes->{{3.41873631310935*^9, 3.418736316988649*^9}, 
+   3.418736555700623*^9, 3.418740596693057*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Coefficient", "[", 
+  RowBox[{"d", ",", " ", "A11"}], "]"}]], "Input",
+ CellChangeTimes->{{3.418736427893353*^9, 3.418736437765118*^9}}],
+
+Cell[BoxData[
+ RowBox[{"A22", "-", 
+  RowBox[{"B12", " ", "D12"}], "-", 
+  RowBox[{"C12", " ", "E12"}]}]], "Output",
+ CellChangeTimes->{3.41873643959191*^9, 3.418736555721601*^9, 
+  3.418740596920202*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Coefficient", "[", 
+  RowBox[{"d", ",", " ", "A12"}], "]"}]], "Input",
+ CellChangeTimes->{{3.418736441069595*^9, 3.418736447075685*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"B11", " ", "D12"}], "-", 
+  RowBox[{"B22", " ", "D12"}], "+", 
+  RowBox[{"C11", " ", "E12"}], "-", 
+  RowBox[{"C22", " ", "E12"}]}]], "Output",
+ CellChangeTimes->{3.418736447619848*^9, 3.41873655587993*^9, 
+  3.418740597171893*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Coefficient", "[", 
+  RowBox[{"d", ",", " ", "A22"}], "]"}]], "Input",
+ CellChangeTimes->{{3.418736457012221*^9, 3.418736462339842*^9}}],
+
+Cell[BoxData[
+ RowBox[{"A11", "+", 
+  RowBox[{"B12", " ", "D12"}], "+", 
+  RowBox[{"C12", " ", "E12"}]}]], "Output",
+ CellChangeTimes->{3.418736463048054*^9, 3.418736556114857*^9, 
+  3.418740597712963*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Coefficient", "[", 
+  RowBox[{"d", ",", " ", "B11"}], "]"}]], "Input",
+ CellChangeTimes->{{3.418736613898804*^9, 3.41873662035579*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"A12", " ", "D12"}], "+", 
+  RowBox[{"B22", " ", 
+   SuperscriptBox["D12", "2"]}], "+", 
+  RowBox[{"C22", " ", "D12", " ", "E12"}]}]], "Output",
+ CellChangeTimes->{3.418736629042193*^9, 3.418740598001779*^9}]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{150, Automatic}, {Automatic, 52}},
+FrontEndVersion->"6.0 for Linux x86 (32-bit) (April 20, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[590, 23, 2134, 45, 209, "Input"],
+Cell[2727, 70, 1194, 35, 112, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3958, 110, 161, 3, 55, "Input"],
+Cell[4122, 115, 1087, 27, 147, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5246, 147, 145, 3, 32, "Input"],
+Cell[5394, 152, 1142, 27, 96, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6573, 184, 160, 3, 32, "Input"],
+Cell[6736, 189, 204, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6977, 199, 160, 3, 32, "Input"],
+Cell[7140, 204, 266, 7, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7443, 216, 160, 3, 32, "Input"],
+Cell[7606, 221, 205, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7848, 231, 159, 3, 32, "Input"],
+Cell[8010, 236, 242, 6, 33, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
